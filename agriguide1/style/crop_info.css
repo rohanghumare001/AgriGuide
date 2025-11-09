@@ -1,0 +1,99 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f0fff0;
+      color:#333;
+    }
+
+    header{
+      background:#228B22;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Box Container */
+    .container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      padding:40px;
+    }
+
+    .card{
+      background:white;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+      transform:translateY(50px);
+      opacity:0;
+      transition: all 0.8s ease;
+    }
+
+    .card.active{
+      transform:translateY(0);
+      opacity:1;
+    }
+
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .card h3{
+      font-size:22px;
+      margin:15px;
+      color:#228B22;
+    }
+
+    .card p{
+      font-size:14px;
+      margin:0 15px 15px;
+      color:#555;
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+      transition:0.4s;
+    }
+
+    /* Button */
+    .btn{
+      display:inline-block;
+      margin:10px 15px 20px;
+      padding:8px 15px;
+      background:#228B22;
+      color:#fff;
+      border-radius:6px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#1a6d1a;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from{opacity:0; transform:translateY(-20px);}
+      to{opacity:1; transform:translateY(0);}
+    }
+
+    footer{
+      background:#228B22;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }

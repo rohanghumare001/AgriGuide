@@ -1,0 +1,104 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3f7f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#hed {
+  color: #2e7d32;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+.form1 {
+  background: white;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.textarea {
+  resize: none;
+}
+
+/* Button Styling */
+.submit-btn {
+  width: 100%;
+  background: #4caf50;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hed {
+    font-size: 1.7rem;
+  }
+
+  .form1 {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .input-field {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  #hed {
+    font-size: 1.5rem;
+  }
+
+  .form1 {
+    padding: 15px;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+  }
+}

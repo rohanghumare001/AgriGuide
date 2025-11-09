@@ -1,0 +1,33 @@
+/* Agriculcture Map */
+    body { font-family: Arial, sans-serif; text-align: center; background: #f0f9f4; }
+    img { max-width: 100%; height: auto; border: 2px solid #333; }
+    #infoBox {
+      margin-top: 20px; 
+      padding: 15px;
+      border: 2px solid #555;
+      border-radius: 8px;
+      background: #fff;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+   .apply-btn {
+      display: block;
+      width: 100px;
+      margin: 10px;
+      margin-top: 0;
+      padding: 10px;
+      text-align: center;
+      background: #1b5e20;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+
+    .apply-btn:hover {
+      background: #2e7d32;
+    }

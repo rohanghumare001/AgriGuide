@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 Agriguide Indian Map</title>
+    <link rel="stylesheet" href="../style/india_map.css">
+</head>
+<body>
+    <!-- Agriculcture Map -->
+     <h1>State-Wise Indian Farmers Fnformation </h1>
+
+  <!-- Map Image -->
+  <img src="../media/India Map Points.jpg" alt="India Map" usemap="#india">
+
+  <!-- Define clickable areas -->
+  <map name="india">
+    <!-- Example areas (coords are dummy, replace with real ones) -->
+    <area shape="rect" coords="161,451,267,488" href="#" alt="Maharashtra" onclick="showInfo('Maharashtra')">
+    <area shape="rect" coords="187,420,327,447" href="#" alt="Maharashtra" onclick="showInfo('Maharashtra')">
+    <area shape="rect" coords="166,490,237,510" href="#" alt="Maharashtra" onclick="showInfo('Maharashtra')">
+
+    <area shape="rect" coords="181,550,194,568" href="#" alt="Goa" onclick="showInfo('Goa')">
+    
+    <area shape="rect" coords="197,530,251,594" href="#" alt="Karnataka" onclick="showInfo('Karnataka')">
+    <area shape="rect" coords="203,594,278,614" href="#" alt="Karnataka" onclick="showInfo('Karnataka')">
+    <area shape="rect" coords="224,615,267,631" href="#" alt="Karnataka" onclick="showInfo('Karnataka')">
+    <area shape="rect" coords="224,514,262,529" href="#" alt="Karnataka" onclick="showInfo('Karnataka')">
+
+    <area shape="rect" coords="220,632,235,648" href="#" alt="Kerala" onclick="showInfo('Kerala')">
+    <area shape="rect" coords="228,648,250,667" href="#" alt="Kerala" onclick="showInfo('Kerala')">
+    <area shape="rect" coords="238,667,255,711" href="#" alt="Kerala" onclick="showInfo('Kerala')">
+
+    <area shape="rect" coords="267,615,313,667" href="#" alt="Tamilnadu" onclick="showInfo('Tamilnadu')">
+    <area shape="rect" coords="259,671,300,690" href="#" alt="Tamilnadu" onclick="showInfo('Tamilnadu')">
+    <area shape="rect" coords="249,637,267,670" href="#" alt="Tamilnadu" onclick="showInfo('Tamilnadu')">
+    <area shape="rect" coords="258,692,276,715" href="#" alt="Tamilnadu" onclick="showInfo('Tamilnadu')">
+
+    <area shape="rect" coords="253,547,322,593" href="#" alt="Andhra" onclick="showInfo('Andhra')">
+
+    <area shape="rect" coords="268,474,322,526" href="#" alt="Telangana" onclick="showInfo('Telangana')">
+
+    <area shape="rect" coords="119,248,222,335" href="#" alt="Rajasthan" onclick="showInfo('Rajasthan')">
+
+    <area shape="rect" coords="83,355,178,435" href="#" alt="Gujarat" onclick="showInfo('Gujarat')">
+
+    <area shape="rect" coords="208,356,331,419" href="#" alt="MP" onclick="showInfo('MP')">
+
+    <area shape="rect" coords="289,270,398,329" href="#" alt="UP" onclick="showInfo('UP')">
+
+    <area shape="rect" coords="392,404,461,472" href="#" alt="Odisha" onclick="showInfo('Odisha')">
+
+    <area shape="rect" coords="331,412,368,451" href="#" alt="Chhattisgarh" onclick="showInfo('Chhattisgarh')">
+    <area shape="rect" coords="354,387,392,409" href="#" alt="Chhattisgarh" onclick="showInfo('Chhattisgarh')">
+
+    <area shape="rect" coords="403,350,452,395" href="#" alt="Jharkhand" onclick="showInfo('Jharkhand')">
+
+    <area shape="rect" coords="462,365,505,413" href="#" alt="Bengal" onclick="showInfo('Bengal')">
+
+    <area shape="rect" coords="408,299,468,348" href="#" alt="Bihar" onclick="showInfo('Bihar')">
+
+    <area shape="rect" coords="219,224,256,243" href="#" alt="Haryana" onclick="showInfo('Haryana')">
+    <area shape="rect" coords="228,243,248,262" href="#" alt="Haryana" onclick="showInfo('Haryana')">
+
+    <area shape="rect" coords="251,246,261,255" href="#" alt="Delhi" onclick="showInfo('Delhi')">
+
+    <area shape="rect" coords="200,179,235,219" href="#" alt="Panjab" onclick="showInfo('Panjab')">
+
+    <area shape="rect" coords="272,188,323,227" href="#" alt="Uttarakhand" onclick="showInfo('Uttarakhand')">
+
+    <area shape="rect" coords="231,144,290,183" href="#" alt="Himachal" onclick="showInfo('Himachal')">
+
+    <area shape="rect" coords="175,106,230,158" href="#" alt="JK" onclick="showInfo('JK')">
+
+    <area shape="rect" coords="229,69,318,121" href="#" alt="Ladakh" onclick="showInfo('Ladakh')">
+
+    <area shape="rect" coords="146,267,507,288" href="#" alt="Sikkim" onclick="showInfo('Sikkim')">
+
+    <area shape="rect" coords="219,224,256,243" href="#" alt="Haryana" onclick="showInfo('Haryana')">
+
+  </map>
+
+  <!-- Info box -->
+  <div id="infoBox">
+    <h2 id="stateName">Click a state</h2>
+    <p id="stateInfo">State information will appear here.</p>
+  </div>
+  <div>
+    <br><br>
+    <center>
+      <a href="./home.html" class="apply-btn">Back / Home Page</a>
+    </center>
+    <br>
+    <br>
+    </div>
+  <script src="../script/india_map.js"></script>
+</body>
+</html>

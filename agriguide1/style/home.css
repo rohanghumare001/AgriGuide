@@ -1,0 +1,548 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5fff5;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      height: 100px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #228B22;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 27px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 19px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: yellow;
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    /* Hero Section */
+    header {
+      height: 100svh;
+      background: url('https://jooinn.com/images/nature-319.jpg') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding-top: 60px;
+      animation-name: backimg;
+      animation-duration: 15s;
+      animation-delay: 5;
+      animation-timing-function:ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    @keyframes backimg {
+      0%{background: url('https://jooinn.com/images/nature-319.jpg') no-repeat center/cover;}
+      50%{background: url('https://png.pngtree.com/thumb_back/fh260/background/20230411/pngtree-nature-forest-sun-ecology-image_2256183.jpg') no-repeat center/cover;}
+    }
+
+    header h1 {
+      font-size: 60px;
+      text-shadow: 2px 2px 5px #000;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 15px;
+      animation: fadeIn 4s ease-in-out;
+    }
+    #marquee{
+      margin-top: 15px;
+      position: relative;
+      top: 85px;
+      /* opacity:0.5; */
+      color:white;
+      font-size: 20px;
+      background-color:green;
+
+    }
+    #ai{
+      height: 50px;
+      width: 50px;
+      position:fixed;
+      top: 590px;
+      left: 1370px;
+    }
+  @media (max-width: 992px)
+  { 
+    #ai{
+      height: 100px;
+      width: 100px;
+      
+    }
+  }
+
+    /* Section */
+    section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #228B22;
+    }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.box {
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* normal shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #222;
+  display: block;
+}
+
+.box h3 {
+  padding: 12px 15px;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.box p {
+  padding: 0 15px 15px 15px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35); /* hover shadow */
+}
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #228B22;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #176117;
+    }
+
+    /* Contact + Footer */
+    footer {
+      height: 600px;
+      width: 100%;
+      background: #228B22;
+      color: #fff;
+      
+      padding: 20px;
+      margin-top: 50px;
+    }
+    #ch1{
+        line-height: 70px;
+      }
+    .finfo{
+      margin-left: 600px;
+    }
+    #fp{
+      line-height: 30px;
+    }
+    legend{
+      text-align: center;
+      padding-left:20px;
+      padding-right:20px;
+      font-size:22px;
+    }
+    .devinfo{
+      display:flex;
+    }
+    .contactinfo{
+      padding-left:110px;
+      padding-right: 70px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    #followus{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .follow{
+      padding-left:5px;
+      
+      
+    }
+  /* 📱 Tablet and below */
+@media (max-width: 992px) {
+  footer{
+    height: 770px;
+    
+  }
+  nav {
+    padding: 15px 20px;
+  }
+  header h1 {
+    font-size: 45px;
+  }
+  header p {
+    font-size: 18px;
+  }
+  .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .devinfo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contactinfo {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+/* 📱 Mobile Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #228B22;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav ul li {
+    margin: 12px 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  #ai {
+    left: auto;
+    right: 15px;
+    bottom: 15px;
+    top: auto;
+  }  
+  .gbox {
+    display: flexbox;
+    width: 600px;
+    margin: 10px 0;
+  }
+}
+
+/*Mobile */
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 22px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  section {
+    padding: 50px 20px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .contactinfo {
+    width: 100%;
+    padding: 20px;
+  }
+
+  #bgVid {
+    width: 100%;
+    height: auto;
+  }
+  .follow {
+    height: 28px;
+    width: 40px;
+  }
+}
+
+
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #228B22;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        text-align: center;
+        padding: 20px;
+      }
+      li {
+        border:2px solid white;
+        height: 40px;
+        width: 150px;
+        padding-top: 8px;
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  @media (max-width:880px){
+section#scheme{flex-direction:column; padding:18px}
+.scheme-media{width:100%;flex-basis:auto}
+.scheme-content{width:100%}
+}
+
+
+/* very small screens */
+@media (max-width:420px){
+.container{padding:12px;margin:14px}
+h2{font-size:1.35rem}
+.btn{padding:10px 14px;font-size:0.95rem}
+}
+#gimg{
+  height: 200px;
+  width:330px;
+}
+#bgVid{
+  height: 200px;
+  width:330px;
+}
+
+
+
+/* goverment cheme Boxes */
+.govcon{
+  display:flex;
+  width:300%;
+  height: 330px;
+}
+.gbox{
+  height:300px;
+  width:350px;
+  border:3px solid black;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+.govimg{
+  height:180px;
+  width:100%;
+}
+#govh3{
+  padding-left: 10px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:#228B22;
+
+}
+.govbtn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #228B22;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+.govbtn:hover {
+    background: #176117;
+  }
+.gbox:hover{
+  box-shadow: 2px 2px 15px 2px black;
+}
+
+/* services */
+:root{
+      --bg:#f6f8fb;
+      --card:#fff;
+      --accent:#3b82f6;
+      --muted:#6b7280;
+      --radius:14px;
+      --gap:22px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    
+    .section{
+      max-width:1200px;
+      margin:0 auto;
+    }
+    h2{
+      margin:0 0 22px 0;
+      font-size:1.7rem;
+    }
+    p.lead{
+      margin:0 0 30px 0;
+      color:var(--muted);
+    }
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:var(--gap);
+    }
+    @media (max-width:1000px){
+      .services-grid{grid-template-columns:repeat(2,1fr);} 
+    }
+    @media (max-width:520px){
+      .services-grid{grid-template-columns:1fr;} 
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:30px;
+      box-shadow:0 8px 20px rgba(15,23,42,0.08);
+      display:flex;
+      gap:20px;
+      align-items:center;
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+      min-height:140px;
+      position:relative;
+      overflow:hidden;
+      animation:fadeInUp 0.6s ease both;
+    }
+    .card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(135deg, rgba(59,130,246,0.1), transparent 70%);
+      opacity:0;
+      transition:opacity 0.4s ease;
+    }
+    .card:hover::before{
+      opacity:1;
+    }
+    .card:hover{
+      transform:translateY(-10px) scale(1.03);
+      box-shadow:0 25px 45px rgba(15,23,42,0.15);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .icon{
+      min-width:80px;
+      min-height:80px;
+      border-radius:14px;
+      background:linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.07));
+      display:grid;
+      place-items:center;
+      font-size:2rem;
+      font-weight:700;
+      color:var(--accent);
+      flex-shrink:0;
+      transition:transform 0.3s ease;
+    }
+    .card:hover .icon{
+      transform:rotate(10deg) scale(1.1);
+    }
+    .meta{
+      display:flex;
+      flex-direction:column;
+    }
+    .meta .title{
+      font-weight:600;
+      margin-bottom:6px;
+      font-size:1.1rem;
+    }
+    .meta .desc{
+      color:var(--muted);
+      font-size:1rem;
+    }
